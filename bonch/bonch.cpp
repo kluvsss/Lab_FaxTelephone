@@ -99,13 +99,20 @@ void FaxTelephone::printState() const {
 int main() {
     setlocale(LC_ALL, "Russian");
 
-    // 1. Создание объекта конструктором по умолчанию
+    // 1. Конструктор по умолчанию
     FaxTelephone defaultDevice;
     defaultDevice.printState();
 
-    // 2. Создание объекта конструктором с параметрами
+    // 2. Конструктор с параметрами
     FaxTelephone customDevice(true, 25);
     customDevice.printState();
+
+    // 3. Создание массива объектов
+    FaxTelephone officeDevices[3] = {
+        FaxTelephone(),
+        FaxTelephone(false, 30),
+        FaxTelephone(true, 5)
+    };
 
     return 0;
 }
