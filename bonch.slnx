@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="bonch/bonch.vcxproj" Id="fba8a92a-48c6-4a13-9046-78bc35f29a8b" />
+</Solution>
