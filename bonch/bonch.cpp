@@ -114,5 +114,14 @@ int main() {
         FaxTelephone(true, 5)
     };
 
+    // 4. Редактирование и просмотр свойств каждого объекта
+    for (int i = 0; i < 3; i++) {
+        cout << "=== Редактирование аппарата №" << (i + 1) << " ===" << endl;
+        officeDevices[i].printState();
+        officeDevices[i].loadPaper(15);
+        officeDevices[i].changeHook();
+        officeDevices[i].printState();
+    }
+
     return 0;
 }
