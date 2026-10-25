@@ -123,5 +123,12 @@ int main() {
         officeDevices[i].printState();
     }
 
+    // 5. Обработка массива объектов
+    cout << ">>> Групповая обработка: прием входящих факсов <<<" << endl;
+    for (int i = 0; i < 3; i++) {
+        cout << "\nАппарат №" << (i + 1) << ":" << endl;
+        officeDevices[i].receiveFax();
+    }
+
     return 0;
 }
