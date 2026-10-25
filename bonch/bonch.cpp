@@ -103,5 +103,9 @@ int main() {
     FaxTelephone defaultDevice;
     defaultDevice.printState();
 
+    // 2. Создание объекта конструктором с параметрами
+    FaxTelephone customDevice(true, 25);
+    customDevice.printState();
+
     return 0;
 }
